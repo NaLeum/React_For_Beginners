@@ -30,7 +30,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://NaLeum.github.io/React_For_Beginners",
+  "homepage": "https://cocky-boyd-cb908f.netlify.app",
   "browserslist": {
     "production": [
       ">0.2%",
