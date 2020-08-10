@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Loader from "../../Components/Loader"
-import Section from "../../Components/Section"
-import Message from "../../Components/Message"
-import Poster from "../../Components/Poster"
+import Helmet from "react-helmet";
+import Loader from "../../Components/Loader";
+import Section from "../../Components/Section";
+import Message from "../../Components/Message";
+import Poster from "../../Components/Poster";
 
 
 
@@ -35,6 +36,9 @@ const SearchPresenter = ({
     updateTerm
   }) => (
     <Container>
+      <Helmet>
+      <title>Search | Nomfilx</title>
+    </Helmet>
       <Form onSubmit={handleSubmit}>
         <Input placeholder="Search Movies or TV Shows..." 
           value={searchTerm} 
